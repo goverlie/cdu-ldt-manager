@@ -1,0 +1,88 @@
+
+html,
+body {
+	height: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	/* The html and body elements cannot have any padding or margin. */
+}
+html {
+	
+}
+td {
+	padding-right: 40px;
+	padding-left: 10px;
+}
+td:last-child {
+	padding-right: 10px;
+}
+th {
+	padding-top: 10px;
+	}
+thead {
+	width: 100%;
+	position: relative;
+}
+thead td {
+		display: block;
+
+}
+
+
+
+/* Wrapper for page content to push down footer */
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+#wrap > .container {
+	padding-top: 60px;
+}
+
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+	position: static;
+	margin-left: -40px !important;
+	margin-right: -40px !important;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+	height: 60px;
+}
+#footer {
+	padding-top: 10px;
+	background-color: rgba(200,200,200,0.32);
+	text-align: right;
+	margin-left: -40px;
+	margin-right: -40px;
+}
+/*
+ Modal Styles
+*/
+
+.modal-header, .close {
+	background-color: #B8A45C;
+	color:white !important;
+	text-align: center;
+	font-size: 30px;
+}
+.modal-footer {
+	padding: 5px;
+	border-top: none;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+
+@media (max-width: 767px) {
+	#footer {
+
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
